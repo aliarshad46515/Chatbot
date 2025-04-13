@@ -1,0 +1,24 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="80" fill="#E0F7FA" />
+
+  <path d="M 100 20 L 90 40 L 110 40 Z" fill="#4FC3F7" />
+  <circle cx="100" cy="20" r="5" fill="#29B6F6" />
+
+  <circle cx="70" cy="80" r="15" fill="#1E88E5" />
+  <circle cx="130" cy="80" r="15" fill="#1E88E5" />
+
+  <rect x="70" y="120" width="60" height="20" rx="10" ry="10" fill="#81D4FA" />
+
+  <path d="M 20 150 C 10 140, 10 120, 30 110 L 50 120 L 30 140 Z" fill="#B2EBF2" />
+  <text x="30" y="130" font-size="10" fill="#000" text-anchor="middle">...</text>
+
+  <g transform="translate(160, 150)">
+    <circle cx="0" cy="0" r="20" fill="#90CAF9" />
+    <circle cx="0" cy="0" r="10" fill="#42A5F5" />
+    <line x1="-15" y1="0" x2="15" y2="0" stroke="#1E88E5" stroke-width="3" />
+    <line x1="0" y1="-15" x2="0" y2="15" stroke="#1E88E5" stroke-width="3" />
+    <line x1="-10.6" y1="-10.6" x2="10.6" y2="10.6" stroke="#1E88E5" stroke-width="3" />
+    <line x1="10.6" y1="-10.6" x2="-10.6" y2="10.6" stroke="#1E88E5" stroke-width="3" />
+  </g>
+
+</svg>
