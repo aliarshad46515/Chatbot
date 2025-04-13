@@ -5,11 +5,6 @@ import InputArea from "./Components/InputArea";
 import MessageList from "./Components/MessageList";
 import { Bot, BrainCircuit, Sparkles } from "lucide-react";
 import { GoogleGenAI } from "@google/genai";
-import { Flagsmith } from "flagsmith-nodejs";
-
-const flagsmith = new Flagsmith({
-  environmentKey: import.meta.env.VITE_GEMINI_API_KEY,
-});
 
 const gemini = new GoogleGenAI({
   apiKey: import.meta.env.VITE_GEMINI_API_KEY,
