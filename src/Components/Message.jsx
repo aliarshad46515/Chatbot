@@ -1,6 +1,41 @@
 import { User, Bot as BotIcon } from "lucide-react";
 
 function Message({ message }) {
+  const formatMessage = (message) => {
+    const sections = message
+      .split(/(###|\n)/)
+      .map((section) => section.trim())
+      .filter(Boolean);
+    return sections.map((section, index) => (
+      <div key={index} className="mb-2">
+        {/^[0-9]+\.\s/.test(section) ? (
+          <p className="mb-1">
+            {section
+              .split(/(\*\*[^*]+\*\*)/)
+              .map((part, i) =>
+                part.startsWith("**") && part.endsWith("**") ? (
+                  <strong key={i}>{part.slice(2, -2)}</strong>
+                ) : (
+                  part
+                )
+              )}
+          </p>
+        ) : (
+          <p>
+            {section
+              .split(/(\*\*[^*]+\*\*)/)
+              .map((part, i) =>
+                part.startsWith("**") && part.endsWith("**") ? (
+                  <strong key={i}>{part.slice(2, -2)}</strong>
+                ) : (
+                  part
+                )
+              )}
+          </p>
+        )}
+      </div>
+    ));
+  };
   return (
     <div
       className={`flex ${
@@ -32,7 +67,7 @@ function Message({ message }) {
               : "bg-gray-100 text-gray-800"
           }`}
         >
-          {message.content}
+          {formatMessage(message.content)}
         </div>
       </div>
     </div>

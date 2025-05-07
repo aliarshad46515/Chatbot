@@ -84,7 +84,7 @@ function App() {
               ],
               temperature: 1,
               top_p: 1,
-              max_tokens: 150,
+              max_tokens: 10000,
               stream: false,
               response_format: { type: "text" },
             }),
