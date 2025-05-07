@@ -67,7 +67,7 @@ function Message({ message }) {
               : "bg-gray-100 text-gray-800"
           }`}
         >
-          {formatMessage(message.content)}
+          {formatMessage(message.content)}  
         </div>
       </div>
     </div>
